@@ -1,1 +1,11 @@
-<p>todo works!</p>
+
+<p>TO do APP</p>
+<p>gide:to select tasks as finished or remove, please enter name of task in textbox </p>
+
+<input type="text" (input)="onChangeTextin($event)">
+<button (click)="onHandleinsert()">Add</button>
+<button (click)="onHandledo()">Do</button>
+<button (click)="onHandlemiit()">emiit</button>
+<ul>
+    <li *ngFor="let item of Menulistitem" [ngClass]="{'islogin':item.isdo}">{{item.task}}</li>
+</ul> 
