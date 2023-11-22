@@ -1,0 +1,36 @@
+
+<html>
+    <head>
+        
+       <script>
+        function question6(a , b)
+        {
+            max=min=remain=1
+            if(a==b)console.log(a)
+            else if(a>b){
+            max=a
+            min=b;
+            }else{
+            max=b
+            min=a
+
+            }
+              for(index=0;remain!=0;index++){
+               
+                remain=max%min
+                max=min
+                min=remain
+              }
+              console.log("BMM of "+a+" "+b +" is "+max)
+                }
+
+                question6(12,60)
+              
+       </script>
+    </head>
+    <body> 
+       
+
+    </body>
+</html>
+
