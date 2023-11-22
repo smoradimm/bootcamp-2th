@@ -1,0 +1,57 @@
+
+<html>
+    <head>
+        
+       <script>
+        let bmm1 =[];
+        function arryofm()
+        {
+            
+            for(number1=10;number1<=1500;number1++)
+        {
+            sumbmm=1
+            for(index=2;index<=number1/2;index++)
+            {
+               
+                b=number1%index
+                if(b==0)
+                    sumbmm+=index    
+                   // console.log(sumbmm)   
+            }
+        
+            bmm1.push(sumbmm)
+
+            //console.log(sumbmm)
+        }
+        console.log(bmm1)
+        console.log(bmm1[210])
+    }
+        function question21(c)
+        {
+            
+           for(i=0;i<=1490;i++)
+           {
+            if(c==bmm1[i])
+            {
+                i+=10
+                if(i==bmm1[c-10])
+                console.log(c +" ,"+ i)
+            }
+           }
+
+         }
+               
+         arryofm()
+      for(number=10;number<=1500;number++)
+       {
+               
+                question21(number)
+      }
+               
+       </script>
+    </head>
+    <body>
+       
+
+    </body>
+</html>

@@ -1,0 +1,49 @@
+
+<html>
+    <head>
+        
+       <script>
+        function adadaval(a)
+        {
+            for(index=2;index<=a;index++)
+            {
+                b=a%index
+                if(a==0)
+                {
+                return false
+                }
+                else if(b==0 && a!=index)
+                {
+                return false;
+                }
+                 else
+                return true;
+            }
+        
+            
+        }
+        function question19(c)
+        {
+            yek=c%10
+            sad=parseInt(c/100)
+        //  console.log(yek) 
+        //    console.log(sad)
+        if (adadaval(yek) && adadaval(sad))
+              console.log(c)
+
+         }
+               
+         
+      for(number=100;number<1000;number++)
+       {
+                question19(number)
+      }
+               
+       </script>
+    </head>
+    <body>
+       
+
+    </body>
+</html>
+
